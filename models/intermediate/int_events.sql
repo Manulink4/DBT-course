@@ -8,7 +8,9 @@ events as (
     select 
         -- BigQuery-specific, there are other ways to generate a
         -- surrogate key, including dbt-utils' surrogate_key macro
-        generate_uuid() as event_id,
+
+        --generate_uuid() as event_id,
+        {{ dbt_utils.surrogate_key(['user_id', 'created_at', 'session_id']) }} as event_id,        
         user_id,
         session_id,
         created_at,
