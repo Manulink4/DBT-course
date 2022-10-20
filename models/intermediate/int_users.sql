@@ -14,7 +14,7 @@ users as (
         -- has been a paying customer once?
         countif(level='paid') > 0 as was_paying,
         -- is currently a paying customer?
-        array_agg(log.level ORDER BY created_at desc limit 1)[offset(0)] = 'paid' as is_paying
+        --array_agg(log.level ORDER BY created_at desc limit 1)[offset(0)] = 'paid' as is_paying
     from log
     where user_id is not null
     group by 1
