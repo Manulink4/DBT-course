@@ -34,4 +34,3 @@ select * from source
 --     from source
 -- )
 
-select * from final
