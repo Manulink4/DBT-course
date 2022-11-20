@@ -1,7 +1,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: gratify
+name: f1_championships
 version: '1.0.0'
 config-version: 2
 
@@ -30,5 +30,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Tell dbt to build all models as views
 # Can be overridden in the individual models using `{{ config(...) }}` macro
 models:
-  gratify:
+  f1_championships:
     +materialized: view
