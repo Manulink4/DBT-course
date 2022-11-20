@@ -1,20 +1,43 @@
 version: 2
 
 sources:
-  - name: gratify
-    database: macro-entity-365216
+  - name: f1championships
+    database: f1-championships
     schema: datalake
     tables:
 
-      - name: log
+      - name: circuits
         description: One row per logging event.
 
-      - name: songs
+      - name: constructor_results
         description: One row per song.
-        columns:
+      
+      - name: constructor_standings
+        description: One row per logging event.
 
-          - name: track_id
-            description: Primary key of the songs table
-            tests:
-              - unique
-              - not_null
+      - name: constructors
+        description: One row per song.
+      - name: driver_standings
+        description: One row per logging event.
+
+      - name: drivers
+        description: One row per song.
+      - name: lap_times
+        description: One row per logging event.
+
+      - name: pit_stops
+        description: One row per song.
+      - name: qualifying
+        description: One row per logging event.
+
+      - name: races
+        description: One row per song.
+      
+      - name: results
+        description: One row per logging event.
+
+      - name: status
+        description: One row per song.
+      
+      
+   
