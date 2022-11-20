@@ -1,0 +1,1 @@
+select * from f1-championships.datalake.circuits limit 10 
