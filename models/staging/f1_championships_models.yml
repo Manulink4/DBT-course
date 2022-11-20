@@ -12,6 +12,9 @@ models:
   #         - not_null
 
   - name: stg_f1__drivers
+  - name: stg_f1__results
+
+  - name: stg_f1__races
   #   description: One row per songs available in gratify's streaming service's
   #   columns:
 
